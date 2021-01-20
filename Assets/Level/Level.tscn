@@ -5,15 +5,16 @@
 [ext_resource path="res://Assets/Level/Level.gd" type="Script" id=3]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 2.5, 2.5, 2.5 )
+extents = Vector3( 5, 5, 5 )
 
 [sub_resource type="SpatialMaterial" id=2]
+flags_unshaded = true
 albedo_texture = ExtResource( 2 )
 
 [sub_resource type="CubeMesh" id=3]
 material = SubResource( 2 )
 flip_faces = true
-size = Vector3( 5, 5, 5 )
+size = Vector3( 10, 10, 10 )
 
 [node name="Spatial" type="Spatial"]
 script = ExtResource( 3 )
@@ -32,4 +33,3 @@ material/0 = null
 [node name="Camera" type="Camera" parent="StaticBody/MeshInstance"]
 transform = Transform( 1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 0, 0, 0 )
 current = true
-fov = 110.0

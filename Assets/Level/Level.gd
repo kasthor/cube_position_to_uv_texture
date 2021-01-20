@@ -104,7 +104,7 @@ func get_face_and_coords(normal, position):
 		coords = Vector2(-position.x, position.y)
 		
 		
-	coords /= Vector2(-5, -5)
+	coords /= Vector2(-10, -10)
 	coords += Vector2(0.5, 0.5)
 	
 	return({"face": face, "coords": coords})
